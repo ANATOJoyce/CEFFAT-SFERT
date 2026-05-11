@@ -219,3 +219,128 @@ border-radius: 100%;
 .img-card:nth-child(6) {
     margin-top: 120px;
 }
+
+/* =========================
+   TABLETTE
+========================= */
+
+@media screen and (max-width: 992px) {
+
+  .info-section {
+    padding: 40px 20px;
+  }
+
+  .info-section h2 {
+    font-size: 3.5rem;
+    margin-bottom: 60px;
+  }
+
+  .about-content {
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .card-about {
+    width: 240px;
+    height: 260px;
+    padding: 80px 15px;
+  }
+
+  .info-section img {
+    margin-right: 0;
+    width: 250px;
+    height: 250px;
+  }
+
+  .img-card {
+    width: 150px;
+    height: 150px;
+  }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 768px) {
+
+  .info-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+
+  .info-section h1 {
+    width: 120px;
+    height: 120px;
+    font-size: 2.5rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+  }
+
+  .card-about {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    padding: 70px 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .info-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 60px;
+    left: 20px;
+    top: -40px;
+  }
+
+  .img-card {
+    width: 140px;
+    height: 140px;
+  }
+
+  .equipe {
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .img-card:nth-child(2),
+  .img-card:nth-child(5),
+  .img-card:nth-child(3),
+  .img-card:nth-child(6) {
+    margin-top: 0; /* on enlève les décalages sur mobile */
+  }
+
+}
+
+/* =========================
+   PETITS MOBILES
+========================= */
+
+@media screen and (max-width: 480px) {
+
+  .info-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .card-about {
+    padding: 60px 15px;
+  }
+
+  .info-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 45px;
+  }
+
+  .img-card {
+    width: 120px;
+    height: 120px;
+  }
+
+}
