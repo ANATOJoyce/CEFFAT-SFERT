@@ -7,7 +7,6 @@ import Partners from './components/partner/Partner';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';  
 import Navbar from './components/navbar/Navbar';
-import Performance from './components/performance/Performance';
 import Descriptions from './components/descriptions/Descriptions';
 
 function App() {
