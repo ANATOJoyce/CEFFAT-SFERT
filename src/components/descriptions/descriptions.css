@@ -53,17 +53,20 @@
 
 }
 
+
 @media screen and (max-width: 768px) {
 
   .descriptions {
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 15px;
+    flex-direction: row;      /* reste en ligne */
+    flex-wrap: nowrap;        /* empêche retour à la ligne */
+    overflow-x: auto;         /* scroll horizontal si déborde */
+    gap: 15px;
+    padding: 20px 10px;
   }
 
   .card-descriptions {
-    width: 100%;
-    max-width: 350px;
+    flex: 0 0 auto;           /* empêche la compression */
+    width: 250px;             /* plus petit */
   }
 
 }
