@@ -53,20 +53,27 @@
 
 }
 
-
 @media screen and (max-width: 768px) {
 
   .descriptions {
-    flex-direction: row;      /* reste en ligne */
-    flex-wrap: nowrap;        /* empêche retour à la ligne */
-    overflow-x: auto;         /* scroll horizontal si déborde */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     gap: 15px;
     padding: 20px 10px;
   }
 
   .card-descriptions {
-    flex: 0 0 auto;           /* empêche la compression */
-    width: 100px;             /* plus petit */
+    flex: 0 0 auto;
+    width: 160px;        /* un peu plus équilibré que 100px */
+    height: 120px;
+  }
+
+  .card-descriptions img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* garde le rendu propre */
+    border-radius: 10px;
   }
 
 }

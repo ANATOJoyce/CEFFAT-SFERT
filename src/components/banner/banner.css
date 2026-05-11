@@ -8,6 +8,7 @@
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 40px;
+  color: #fff;
 }
 
 /* SLIDER */
@@ -88,15 +89,32 @@
 }
 
 /* MOBILE */
+
 @media screen and (max-width: 768px) {
 
   .culture-card {
-    min-width: 220px;
-    height: 160px;
+    min-width: 180px;
+    height: 140px;
+    border-radius: 15px;
+  }
+
+  .culture-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .overlay {
+    padding: 10px;
+  }
+
+  .overlay h2 {
+    font-size: 1rem;
   }
 
   .hero-content h1 {
     font-size: 2rem;
+    margin-bottom: 20px;
   }
 
 }
