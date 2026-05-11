@@ -1,6 +1,4 @@
 import './information.css';
-import planet from '../../assets/images/planet.png';
-import farmers from '../../assets/images/farmers.jpg';
 import membre from '../../assets/images/membre.jpg';
 import {
   FaMapMarkedAlt,
