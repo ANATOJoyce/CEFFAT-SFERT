@@ -1,0 +1,136 @@
+:root {
+  --primary-color: #f7b100;
+}
+
+/* ===================== HERO ===================== */
+.hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 100px 24px 60px; /* 100px top pour la navbar fixe */
+  background: var(--primary-color);
+  overflow: hidden;
+}
+
+/* Overlay décoratif */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at top, rgba(255,255,255,0.15) 0%, transparent 70%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ===================== HERO CONTENT ===================== */
+.hero-content {
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 6vw, 5rem);
+  font-weight: 900;
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.hero-content p {
+  font-size: clamp(15px, 2vw, 18px);
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* ===================== GRID CULTURES ===================== */
+.cultures-grid {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.culture-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.culture-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.culture-card img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+.culture-card h2 {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: clamp(13px, 1.5vw, 16px);
+  font-weight: 700;
+}
+
+/* ===================== ANIMATIONS ===================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===================== TABLETTE (max 1024px) ===================== */
+@media screen and (max-width: 1024px) {
+  .cultures-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===================== MOBILE (max 768px) ===================== */
+@media screen and (max-width: 768px) {
+  .hero {
+    gap: 32px;
+    padding: 80px 16px 48px;
+  }
+
+  .cultures-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .culture-card h2 {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+}
+
+/* ===================== PETIT MOBILE (max 480px) ===================== */
+@media screen and (max-width: 480px) {
+  .cultures-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}

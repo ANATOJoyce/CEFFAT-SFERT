@@ -1,3 +1,25 @@
+:root {
+  /* PRIMARY (jaune/or) */
+  --primary-color: #f7b100;
+  --primary-light: #ffd24d;
+  --primary-dark: #d99a00;
+
+  /* SECONDARY (vert) */
+  --secondary-color: #145503;
+  --secondary-light: #1f7a05;
+  --secondary-dark: #0e3d02;
+
+  /* NEUTRES */
+  --bg-color: #f9f9f9;
+  --card-bg: #ffffff;
+  --text-color: #222222;
+  --text-light: #666666;
+  --border-color: #e0e0e0;
+
+  /* ACCENTS */
+  /* SHADOW */
+  --shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 .App {
   text-align: center;
 }
@@ -34,5 +56,15 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media (max-width: 768px) {
+
+  .about h1 {
+    font-size: 24px;
+  }
+
+  .about p {
+    font-size: 14px;
   }
 }

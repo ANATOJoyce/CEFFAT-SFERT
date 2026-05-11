@@ -1,0 +1,120 @@
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  padding: 50px;
+}
+
+.info-section-contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, #011600, #022d00);
+    
+    text-align: center;
+    color: white;
+}
+.info-section-contact h2 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin-bottom: 100px;
+}
+
+.Partenaire-message a{
+    text-decoration: none;
+  color: white;
+  background: var(--primary-color);
+  padding: 20px 40px;
+  margin-bottom: 50px;
+  border-radius: 6px;
+  font-size: 20px;
+  font: 2.5em sans-serif;
+}
+
+.Partenaire-message h1{
+  padding: 50px 50px;
+  font-size: 3.5em;
+  font-family: initial;
+
+}
+
+.Partenaire-message h2{
+  padding: 50px 50px;
+  font-size: 3.5em;
+  font-family: initial;
+  color: var(--primary-color)
+}
+/*NOUVEUAUUUUUUUUUUUUUUUUUUUUU*/
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding: 30px;
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  padding: 100px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.541);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin: 0 0 50px;
+  font: 2.5em A;
+  color: #022d00;
+}
+
+.card p {
+  margin: 0 0 50px;
+
+  color: #555;
+}
+
+.card a {
+  text-decoration: none;
+  color: white;
+  background: var(--primary-color);
+  padding: 20px 40px;
+  border-radius: 6px;
+  font-size: 20px;
+  font: 1.2em sans-serif;
+}
+
+.card a:hover {
+  background: var(--primary-light);
+}
+
+/* Icône en haut à droite */
+.icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -50px;
+  left: 0px;
+  font-size: 90px;
+  width:150px;
+  height: 150px;
+  background: var(--secondary-light);
+  border-radius: 20px 40px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .social-container {
+    flex-direction: column;
+  }
+}
